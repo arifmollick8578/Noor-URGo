@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454567069651",
+    "project_id": "urgo-1cdb6",
+    "storage_bucket": "urgo-1cdb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454567069651:android:792161d80ce9919be7d126",
+        "android_client_info": {
+          "package_name": "com.noor.essex.urgo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV7AN2zxCB5V-9pm_9OcfAOtyAmDTMsXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

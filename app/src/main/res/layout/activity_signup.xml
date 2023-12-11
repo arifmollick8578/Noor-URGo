@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_telephone"
+                android:hint="Mobile"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University Name/ Campus"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_univ_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="University Name/ Campus"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_university"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/cor_roxo"/>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"/>
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:layout_marginTop="16dp"
+                android:text="Sign up"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:onClick="validateDetails"/>
+
+            <TextView
+                android:id="@+id/text_log_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Already have account? Login"
+                android:onClick="onClickLogin"
+                android:textColor="@color/cor_roxo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/ProgressBar"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
