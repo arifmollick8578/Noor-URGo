@@ -108,6 +108,7 @@ class SignupActivity : AppCompatActivity() {
     // when you click register
     fun onClickLogin(view: View?) {
         startActivity(Intent(this, LoginActivity::class.java))
+//        startActivity(Intent(this, FormSellActivity::class.java))
         finish()
     }
 
